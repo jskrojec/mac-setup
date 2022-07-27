@@ -1,0 +1,16 @@
+iterm2
+alfred/raycast
+rectangle?
+alt-tab?
+firefox-developer-edition?
+app-cleaner
+android-file-transfer?
+android-platform-tools?
+discord
+vlc
+keka?
+kap?
+time-out?
+visual-studio-code
+insomnia?
+istat menus?
