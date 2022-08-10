@@ -1,14 +1,15 @@
-iterm2/warp
+iterm2
 raycast
-alt-tab?
+alt-tab
 firefox-developer-edition
 app-cleaner
 android-file-transfer
-android-platform-tools/android studio?
+android-platform-tools/android-studio?
 discord
 vlc
 keka
 kap
+visual-studio
 visual-studio-code
 insomnia/postman?
 istat menus/stats?
