@@ -1,0 +1,27 @@
+{
+  "name": "mac-setup",
+  "version": "1.0.0",
+  "description": "This repo contains info on all the apps I use on my mac.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "toc": "doctoc README.md --github",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jskrojec/mac-setup.git"
+  },
+  "author": "Jakub Krojec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jskrojec/mac-setup/issues"
+  },
+  "homepage": "https://github.com/jskrojec/mac-setup#readme",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  },
+  "dependencies": {
+    "doctoc": "^2.2.0"
+  }
+}
