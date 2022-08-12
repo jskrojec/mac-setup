@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "toc": "doctoc README.md --github",
+    "toc": "doctoc README.md --notitle --github",
     "prepare": "husky install"
   },
   "repository": {
