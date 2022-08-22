@@ -4,7 +4,7 @@ alt-tab
 firefox-developer-edition
 app-cleaner
 android-file-transfer
-android-platform-tools/android-studio?
+android-studio
 discord
 vlc
 keka
