@@ -127,6 +127,50 @@ You can run the following to confirm you shell has changed:
 echo $SHELL
 ```
 
+#### Customizing Bash with `.bash_profile`
+
+You can install [Oh My Bash](https://ohmybash.nntoan.com/) to get a ton of customizations out of the box.
+
+I store my `.bash_profile` on [github here](???) so I can copy it over to any machine I'm setting up.
+
+Copy this file (or create your own) in your home directory:
+
+```sh
+cd ~
+curl -O [LINKHERE]
+```
+
+#### Commands used by my .bash_profile
+
+* vcprompt - list the current branch if in a folder that is a git repo
+
+```sh
+brew install vcprompt
+```
+
+#### Install the latest version of git
+
+Use brew to install the latest version of `git`:
+
+```sh
+brew install git
+```
+
+Open a new tab / window to start using the latest version:
+
+```sh
+git --version
+```
+
+Configure git with your name / email and preferred editor:
+
+```sh
+git config --global user.name [name]
+git config --global user.email [email]
+git config --global core.editor nano
+```
+
+
 ## OS Productivity
 
 ### Window Management/Quick Launcher/Alt-Tab
