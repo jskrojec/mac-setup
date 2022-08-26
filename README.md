@@ -53,15 +53,14 @@ Once installed, launch it and customize the settings / preferences to your likin
 
 * Appearance
   * Theme
-    * Minimal ???
+    * Minimal
 * Profiles
   * Default
       * General -> Working Directory -> Reuse previous session's directory
-      * Colors -> Basic Colors -> Foreground -> ???
-      * Text -> Font -> Anonymous Pro or Cascadia Code
-          * You can download this font [here](https://www.marksimonson.com/fonts/view/anonymous-pro).
+      * Colors -> Basic Colors -> Foreground -> White
+      * Text -> Font -> [Cascadia Code](https://github.com/microsoft/cascadia-code) or [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro)
           * I use this font in VS Code as well
-      * Text -> Font Size -> ???
+      * Text -> Font Size -> 16
       * Keys -> Key Mappings -> Presets -> Natural Text Editing
 
 
