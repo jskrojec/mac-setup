@@ -56,17 +56,76 @@ Once installed, launch it and customize the settings / preferences to your likin
     * Minimal
 * Profiles
   * Default
-      * General -> Working Directory -> Reuse previous session's directory
-      * Colors -> Basic Colors -> Foreground -> White
-      * Text -> Font -> [Cascadia Code](https://github.com/microsoft/cascadia-code) or [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro)
-          * I use this font in VS Code as well
-      * Text -> Font Size -> 16
-      * Keys -> Key Mappings -> Presets -> Natural Text Editing
+    * General -> Working Directory -> Reuse previous session's directory
+    * Colors -> Basic Colors -> Foreground -> White
+    * Text -> Font -> [Cascadia Code PL](https://github.com/microsoft/cascadia-code)
+      * Optional: [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro
+    * Text -> Font Size -> 16
+    * Keys -> Key Mappings -> Presets -> Natural Text Editing
 
 
 ### Shell
 
+Mac now comes with `zsh` as the default [shell](https://en.wikipedia.org/wiki/Comparison_of_command_shells). `bash` is my preferred shell.
+
+I prefer bash because every remote linux machine I log into uses bash. Also, most shell scripts you come across (`.sh` files) are meant to be run on `sh` (Bourne shell) or `bash` (Bourne again shell). These files _might_ run on `zsh`, but there might be some compatibility issues.
+
+If you are a beginner, you probably don't need to replace your shell with `bash`. If you're going to stick with `zsh`, checkout [Oh My Zsh](https://ohmyz.sh/) which gives you a bunch of customizations out of the box.
+
+
 ### Install Bash and set it as the default
+
+To see what shell is currently your default, run:
+
+```sh
+echo $SHELL
+```
+
+To install the latest version of bash:
+
+```sh
+brew install bash
+```
+
+Then, determine where bash got installed:
+
+```sh
+which bash
+```
+
+This will likely print `/usr/local/bin/bash`.
+
+We now need to add this to our `/etc/shells` file so we can set it as our default shell.
+
+Open up the `/etc/shells` file in `nano` (a command line text editor) with super user privileges (you will need to type your password after running this command):
+
+```sh
+sudo nano /etc/shells
+```
+
+Command explained:
+
+* [`sudo`](https://en.wikipedia.org/wiki/Sudo) is a way of running a command with `super user` privileges.
+* [`nano`](https://en.wikipedia.org/wiki/GNU_nano) is an easy to use command line editor. As opposed to [`vi` or `vim`](https://en.wikipedia.org/wiki/Vim_(text_editor)).
+* `/etc/shells` is the file we need to edit / update.
+
+This will launch a command line editor. Add `/usr/local/bin/bash` to the file above the other list of shells.
+
+Press `CTRL+X` to close the file and then `Y` to confirm / save the changes.
+
+Now that `/usr/local/bin/bash` is in our `/etc/shells` file, we can set it as our default shell (you will need to enter your password for this command as well):
+
+```sh
+chsh -s /usr/local/bin/bash
+```
+
+Now that you've changed your shell, if you open up a new iTerm2 tab or close / re-open iTerm2, you should be presented with a `bash` shell!
+
+You can run the following to confirm you shell has changed:
+
+```sh
+echo $SHELL
+```
 
 ## OS Productivity
 
