@@ -11,6 +11,6 @@ keka
 kap
 visual-studio
 visual-studio-code
-insomnia/postman?
-istat menus/stats?
+insomnia
+istat-menus
 itsycal

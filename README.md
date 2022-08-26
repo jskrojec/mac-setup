@@ -27,11 +27,43 @@ This repo contains info on all the apps I use on my mac. Setup inspired by [Codi
 
 [Homebrew](https://brew.sh/) allows us to install tools and apps from the command line.
 
+To install it, open up the built in `Terminal` app and run this command:
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+This will also install the xcode build tools which is needed by many other developer tools.
+
+After Homebrew is done installing, we will use it to install everything else we need.
+
 ### Terminal
+
+The first app I install is to replace the built in `Terminal`.
+
+Documentation for more info on what iTerm2 can do: [https://iterm2.com/documentation.html](https://iterm2.com/documentation.html)
+
+We install this using a Homebrew "cask". Casks are full applications, similar to what you would install from the App store.
 
 ```
 brew install iterm2
 ```
+
+Once installed, launch it and customize the settings / preferences to your liking. These are my preferred settings:
+
+* Appearance
+  * Theme
+    * Minimal ???
+* Profiles
+  * Default
+      * General -> Working Directory -> Reuse previous session's directory
+      * Colors -> Basic Colors -> Foreground -> ???
+      * Text -> Font -> Anonymous Pro or Cascadia Code
+          * You can download this font [here](https://www.marksimonson.com/fonts/view/anonymous-pro).
+          * I use this font in VS Code as well
+      * Text -> Font Size -> ???
+      * Keys -> Key Mappings -> Presets -> Natural Text Editing
+
 
 ### Shell
 
