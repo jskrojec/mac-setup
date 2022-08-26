@@ -93,7 +93,7 @@ Then, determine where bash got installed:
 which bash
 ```
 
-This will likely print `/usr/local/bin/bash`.
+This will likely print `/opt/homebrew/bin/bash`.
 
 We now need to add this to our `/etc/shells` file so we can set it as our default shell.
 
@@ -113,10 +113,10 @@ This will launch a command line editor. Add `/usr/local/bin/bash` to the file ab
 
 Press `CTRL+X` to close the file and then `Y` to confirm / save the changes.
 
-Now that `/usr/local/bin/bash` is in our `/etc/shells` file, we can set it as our default shell (you will need to enter your password for this command as well):
+Now that `/opt/homebrew/bin/bash` is in our `/etc/shells` file, we can set it as our default shell (you will need to enter your password for this command as well):
 
 ```sh
-chsh -s /usr/local/bin/bash
+chsh -s /opt/homebrew/bin/bash
 ```
 
 Now that you've changed your shell, if you open up a new iTerm2 tab or close / re-open iTerm2, you should be presented with a `bash` shell!
