@@ -11,6 +11,7 @@ keka
 kap
 visual-studio
 visual-studio-code
-insomnia
+openvpn-connect
+microsoft-remote-desktop
 istat-menus
 itsycal
