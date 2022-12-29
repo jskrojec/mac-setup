@@ -14,7 +14,7 @@
 - [x] [SingleFile](https://github.com/gildas-lormeau/SingleFile)
 - [x] [SponsorBlock](https://sponsor.ajay.app/)
 - [x] [uBlock Origin](https://ublockorigin.com/)
-  - [config](configs\ublock-kopia-zapasowa_2022-11-20_19.01.20.txt)
+  - [config](configs/ublock-kopia-zapasowa_2022-11-20_19.01.20.txt)
 
 ## Others
 
