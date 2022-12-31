@@ -61,8 +61,7 @@ Once installed, launch it and customize the settings / preferences to your likin
   - Default
     - General -> Working Directory -> Reuse previous session's directory
     - Colors -> Basic Colors -> Foreground -> White
-    - Text -> Font -> [Cascadia Code PL](https://github.com/microsoft/cascadia-code)
-      - Optional: [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro)
+    - Text -> Font -> [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro)
     - Text -> Font Size -> 16
     - Keys -> Key Mappings -> Presets -> Natural Text Editing
 
