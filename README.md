@@ -14,9 +14,10 @@ This repo contains info on all the apps I use on my mac. Setup inspired by [Codi
     - [Commands used by my .bash_profile](#commands-used-by-my-bash_profile)
     - [Install the latest version of git](#install-the-latest-version-of-git)
 - [OS Productivity](#os-productivity)
-  - [Window Management/Quick Launcher/Alt-Tab](#window-managementquick-launcheralt-tab)
-  - [Dock/Finder](#dockfinder)
+  - [Window Management](#window-management)
   - [Quick Launching](#quick-launching)
+  - [App Switching](#app-switching)
+  - [Dock/Finder](#dockfinder)
 - [Web Browser - Extensions and filters](#web-browser---extensions-and-filters)
 - [Node.js - nvm](#nodejs---nvm)
 - [Code Editor - VS and VS Code](#code-editor---vs-and-vs-code)
@@ -166,15 +167,49 @@ git config --global user.email [email]
 git config --global core.editor nano
 ```
 
+Or copy your '.gitconfig' from your '.dotfiles' private repository to your home directory:
+
+```sh
+curl -O [LINKHERE]
+```
+
 ## OS Productivity
 
-### Window Management/Quick Launcher/Alt-Tab
+### Window Management
 
-### Dock/Finder
+I know this feature is built in to a lot of other operating systems, but it is not built in to a Mac, so we need an app for it.
+
+You can use [rectangle](https://rectangleapp.com/) to move and resize windows using keyboard shortcuts.
+
+I highly recommend installing this and memorizing the keyboard shortcuts. Fluid and seamless window management is key to being productive while coding.
+
+```sh
+brew install rectangle
+```
 
 ### Quick Launching
 
+The built in spotlight search has web search results as the default instead of apps or folders on my machine.
+
+I use [Raycast](https://www.raycast.com/) to launch apps / folders.
+
+### App Switching
+
+The built in App switcher only shows application icons, and only shows 1 icon per app regardless of how many windows you have open in that app.
+
+I use an app switcher called [Alt-Tab](https://alt-tab-macos.netlify.app/). It shows full window previews, and has an option to show a preview for every open window in all applications (even minimized ones).
+
+I replace the built-in `CMD+TAB` shortcut with AltTab.
+
+```sh
+brew install alt-tab
+```
+
+### Dock/Finder
+
 ## Web Browser - Extensions and filters
+
+I use [Mozilla Firefox Developer Edition](https://www.mozilla.org/). Check out [here](firefox-setup.md).
 
 ## Node.js - nvm
 
