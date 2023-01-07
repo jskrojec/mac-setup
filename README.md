@@ -209,7 +209,7 @@ brew install alt-tab
 
 ## Web Browser - Extensions and filters
 
-I use [Mozilla Firefox Developer Edition](https://www.mozilla.org/). Check out [here](firefox-setup.md).
+I use [Firefox Developer Edition](https://www.mozilla.org/), because it is open source and comes from the Mozilla Foundation, a non profit company that respects my privacy. Check out [here](firefox-setup.md).
 
 ## Node.js - nvm
 
