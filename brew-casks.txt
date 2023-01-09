@@ -1,9 +1,11 @@
 iterm2
 raycast
+rectangle
 alt-tab
 firefox-developer-edition
 app-cleaner
 android-file-transfer
+android-platform-tools
 android-studio
 discord
 vlc

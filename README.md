@@ -63,6 +63,8 @@ Once installed, launch it and customize the settings / preferences to your likin
     - General -> Working Directory -> Reuse previous session's directory
     - Colors -> Basic Colors -> Foreground -> White
     - Text -> Font -> [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro)
+      - [Anonymice Nerd Font](https://www.nerdfonts.com/font-downloads)
+      - [Caskaydia Cove Nerd Font](https://www.nerdfonts.com/font-downloads)
     - Text -> Font Size -> 16
     - Keys -> Key Mappings -> Presets -> Natural Text Editing
 
@@ -128,7 +130,7 @@ echo $SHELL
 
 #### Customizing Bash with `.bash_profile`
 
-I store my `.bash_profile` on [github here](???) so I can copy it over to any machine I'm setting up.
+I store my `.bash_profile` on my private github repository so I can copy it over to any machine I'm setting up.
 
 Copy this file (or create your own) in your home directory:
 
@@ -205,7 +207,83 @@ I replace the built-in `CMD+TAB` shortcut with AltTab.
 brew install alt-tab
 ```
 
-### Dock/Finder
+### Other Apps I Use Daily
+
+- [firefox-developer-edition](https://www.mozilla.org/en-US/firefox/developer/) - Preferred web browser
+- [app-cleaner](https://freemacsoft.net/appcleaner/) - When removing an app, will search your file system for related files / settings that should be removed as well
+- android-file-transfer - Transfer files to / from my android phone
+- android-platform-tools - Installs `adb` without the need for the full android studio.
+- [signal](https://www.signal.org/) - Messaging
+- [discord](https://discord.com/) - Messaging / Community
+- [vlc](https://www.videolan.org/) - I use VLC to watch videos instead of the built in QuickTime.
+- [keka](https://www.keka.io/en/) - Can extract 7z / rar and other types of archives
+- [kap](https://getkap.co/) - Screen recorder / gif maker
+- [visual-studio-code](https://code.visualstudio.com/) - Code Editor
+
+You can install them in one go by placing them all into a text file and then running brew install:
+
+```sh
+xargs brew install < apps.txt
+```
+
+## OS Settings
+
+These are my preferred settings for `Finder` and the `Dock`.
+
+### Finder
+
+- Finder -> Preferences
+  - General -> Show these on the desktop -> Select None
+    - I try to keep my desktop completely clean.
+  - General -> New Finder windows show -> Home Folder
+    - I prefer to see my home folder in each new finder window instead of recent documents
+  - Advanced -> Show all filename extensions -> Yes
+  - Advanced -> Show warning before changing an extension -> No
+  - Advanced -> When performing a search -> Search the current folder
+- View
+  - Show Status Bar
+  - Show Path Bar
+  - Show Tab Bar
+
+### Dock
+
+I don't use the Dock at all. It takes up screen space, and I can use Alfred to launch apps and AltTab to switch between apps. I make the dock as small as possible and auto hide it.
+
+- System Preferences
+  - Dock & Menu Bar
+    - Size -> Small as possible
+    - Position on screen -> Right
+    - Automatically hide and show the Dock -> Yes
+
+## Menu Bar Customization
+
+### System Stats Widgets
+
+I like to see my network traffic, CPU temp / usage and RAM usage at a glance.
+
+I used to use [iStat Menus](https://bjango.com/mac/istatmenus/), but a few people in my twitch chat pointed me to [stats](https://github.com/exelban/stats), a FOSS menu bar stats app. I tried it out, and I like it so far.
+
+In each widget, a key setting to look for is under "widget settings", choose "merge widgets into one".
+
+```sh
+brew install stats
+```
+
+### Menu Bar Calendar
+
+I like to have a calendar in the menu bar that I can quickly look at. stats does not include one, so I found [itsycal](https://www.mowglii.com/itsycal/). It seems fine for my needs.
+
+```sh
+brew install itsycal
+```
+
+itsycal shows the date, so I hide the date in the system menu bar widget:
+
+- System Preferences
+  - Dock & Menu Bar
+    - Clock
+      - Show Date -> Never
+      - Show Day of Week -> No
 
 ## Web Browser - Extensions and filters
 
@@ -213,6 +291,62 @@ I use [Firefox Developer Edition](https://www.mozilla.org/), because it is open 
 
 ## Node.js - nvm
 
+I use nvm to manage the installed versions of Node.js on my machine. This allows me to easily switch between Node.js versions depending on the project I'm working in.
+
+See installation instructions [here](https://github.com/nvm-sh/nvm#installing-and-updating).
+
+OR run this command (make sure v0.39.1 is still the latest)
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+```
+
+After installation you'll want to add the following to your .bash_profile / .zshrc etc.
+
+```sh
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
+Now that nvm is installed, you can install a specific version of node.js and use it:
+
+```sh
+nvm install 18
+nvm use 18
+node --version
+```
+
+### Global Modules
+
+There are a few global node modules I use a lot:
+
+- lite-server
+  - Auto refreshing static file server. Great for working on static apps with no build tools.
+- license
+  - Auto generate open source license files
+- gitignore
+  - Auto generate `.gitignore` files base on the current project type
+
+```sh
+npm install -g lite-server license gitignore
+```
+
 ## Code Editor - VS and VS Code
+
+VS and VS Code is my preferred code editor.
+
+Two of the most notable settings are:
+
+```json
+{
+  "editor.linkedEditing": true,
+  "editor.snippetSuggestions": "top",
+}
+```
+
+- editor.linkedEditing
+  - Automatically edit a closing tag when editing an opening tag
+- editor.snippetSuggestions
+  - Puts the most relevant auto complete options at the top
 
 ## Code Editor Extensions
