@@ -17,9 +17,16 @@ This repo contains info on all the apps I use on my mac. Setup inspired by [Codi
   - [Window Management](#window-management)
   - [Quick Launching](#quick-launching)
   - [App Switching](#app-switching)
-  - [Dock/Finder](#dockfinder)
+  - [Other Apps I Use Daily](#other-apps-i-use-daily)
+- [OS Settings](#os-settings)
+  - [Finder](#finder)
+  - [Dock](#dock)
+- [Menu Bar Customization](#menu-bar-customization)
+  - [System Stats Widgets](#system-stats-widgets)
+  - [Menu Bar Calendar](#menu-bar-calendar)
 - [Web Browser - Extensions and filters](#web-browser---extensions-and-filters)
 - [Node.js - nvm](#nodejs---nvm)
+  - [Global Modules](#global-modules)
 - [Code Editor - VS and VS Code](#code-editor---vs-and-vs-code)
 - [Code Editor Extensions](#code-editor-extensions)
 
@@ -174,6 +181,8 @@ Or copy your '.gitconfig' from your '.dotfiles' private repository to your home 
 ```sh
 curl -O [LINKHERE]
 ```
+
+You can make a script to do that for you too!
 
 ## OS Productivity
 
