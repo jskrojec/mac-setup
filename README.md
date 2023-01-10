@@ -256,7 +256,7 @@ These are my preferred settings for `Finder` and the `Dock`.
 
 ### Dock
 
-I don't use the Dock at all. It takes up screen space, and I can use Alfred to launch apps and AltTab to switch between apps. I make the dock as small as possible and auto hide it.
+I don't use the Dock at all. It takes up screen space, and I can use Raycast to launch apps and AltTab to switch between apps. I make the dock as small as possible and auto hide it.
 
 - System Preferences
   - Dock & Menu Bar
@@ -270,7 +270,7 @@ I don't use the Dock at all. It takes up screen space, and I can use Alfred to l
 
 I like to see my network traffic, CPU temp / usage and RAM usage at a glance.
 
-I used to use [iStat Menus](https://bjango.com/mac/istatmenus/), but a few people in my twitch chat pointed me to [stats](https://github.com/exelban/stats), a FOSS menu bar stats app. I tried it out, and I like it so far.
+I use [iStat Menus](https://bjango.com/mac/istatmenus/).
 
 In each widget, a key setting to look for is under "widget settings", choose "merge widgets into one".
 
@@ -304,7 +304,7 @@ I use nvm to manage the installed versions of Node.js on my machine. This allows
 
 See installation instructions [here](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-OR run this command (make sure v0.39.1 is still the latest)
+OR run this command (make sure v0.39.3 is still the latest)
 
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
