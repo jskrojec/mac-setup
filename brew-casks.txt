@@ -4,7 +4,6 @@ rectangle
 alt-tab
 rectangle
 firefox-developer-edition
-app-cleaner
 android-file-transfer
 android-platform-tools
 android-studio
