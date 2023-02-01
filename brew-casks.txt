@@ -2,6 +2,7 @@ iterm2
 raycast
 rectangle
 alt-tab
+rectangle
 firefox-developer-edition
 app-cleaner
 android-file-transfer
