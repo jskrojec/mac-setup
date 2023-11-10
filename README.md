@@ -275,7 +275,7 @@ I use [iStat Menus](https://bjango.com/mac/istatmenus/).
 In each widget, a key setting to look for is under "widget settings", choose "merge widgets into one".
 
 ```sh
-brew install stats
+brew install istat-menus
 ```
 
 ### Menu Bar Calendar

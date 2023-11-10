@@ -1,0 +1,75 @@
+{
+    "protocol-version": "1.0",
+    "general-settings": {
+        "app-language": "en-GB",
+        "allow-acceptable-ads": false,
+        "show-app-updated-disabled": false,
+        "update-filters-period": 24,
+        "show-tray-icon": false,
+        "launch-at-login": true,
+        "verbose-logging": false,
+        "hardware-acceleration-disabled": false
+    },
+    "filters": {
+        "enabled-groups": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            0
+        ],
+        "enabled-filters": [
+            208,
+            2,
+            3,
+            4,
+            216,
+            217,
+            221,
+            232,
+            237,
+            238,
+            246,
+            247,
+            18,
+            19,
+            20,
+            21,
+            22,
+            242,
+            122,
+            229,
+            250
+        ],
+        "custom-filters": [
+            {
+                "filterId": 1001,
+                "customUrl": "https://hole.cert.pl/domains/domains_adblock.txt",
+                "enabled": false,
+                "title": "CERT.PL's Warning List",
+                "trusted": false
+            },
+            {
+                "filterId": 1000,
+                "customUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
+                "enabled": true,
+                "title": "➗ Actually Legitimate URL Shortener Tool",
+                "trusted": false
+            }
+        ],
+        "user-filter": {
+            "enabled": true,
+            "rules": "",
+            "disabled-rules": ""
+        },
+        "allowlist": {
+            "enabled": true,
+            "inverted": false,
+            "domains": [],
+            "inverted-domains": []
+        }
+    }
+}

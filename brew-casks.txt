@@ -2,7 +2,9 @@ alfred
 android-file-transfer
 android-platform-tools
 android-studio
+appcleaner
 battle-net
+curseforge
 discord
 firefox-developer-edition
 gog-galaxy
@@ -10,6 +12,8 @@ istat-menus
 iterm2
 itsycal
 keka
+libreoffice
+librewolf
 messenger
 microsoft-remote-desktop
 nvidia-geforce-now
@@ -17,6 +21,7 @@ openvpn-connect
 rectangle
 signal
 steam
+temurin
 visual-studio
 visual-studio-code
 vlc
