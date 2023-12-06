@@ -11,7 +11,6 @@
 - [Dark Reader](https://darkreader.org/)
 - [Enhancer for YouTube](https://www.mrfdev.com/enhancer-for-youtube)
   - [config](configs/yt-enhancer-config.txt)
-- [OneTab](https://www.one-tab.com/)
 - [Skip Redirect](https://github.com/sblask/webextension-skip-redirect)
 - [SingleFile](https://github.com/gildas-lormeau/SingleFile)
 - [Smart Referer](https://addons.mozilla.org/firefox/addon/smart-referer/)
@@ -19,7 +18,6 @@
   - Uncheck `Use default whitelist`
   - Choose Strict mode and add exceptions if needed
 - [SponsorBlock](https://sponsor.ajay.app/)
-- [Tabliss - New Tab](https://tabliss.io/)
 - [uBlock Origin](https://ublockorigin.com/)
   - Setup your [blocking mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode)
   - Enable `AdGuard URL Tracking Protection`
